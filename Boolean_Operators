@@ -1,0 +1,43 @@
+#Use each of the Boolean operators in the following tables from the lecture:
+my_cookies = 20
+your_cookies =15
+print(my_cookies == your_cookies)
+
+my_cookies = 20
+your_cookies =15
+good_amount_of_cookies = my_cookies != your_cookies
+print(good_amount_of_cookies)
+
+
+my_cookies = 20
+your_cookies =15
+result=my_cookies > 15
+print(result)
+
+my_cookies = 20
+best_amount_of_cookies = 100
+cookie_comparison=my_cookies <= 100
+print(cookie_comparison)
+
+
+my_cookies = 20
+best_amount_of_cookies = 100
+cookie_comparison2=my_cookies >= 100
+print(cookie_comparison2)
+
+my_cookies = 20
+not_enough_cookies = 1
+cookie_comparison3 = not_enough_cookies < my_cookies
+print(cookie_comparison3)
+
+my_cookies = 20
+good_amount_of_cookies = 50
+best_amount_of_cookies = 100
+final_countdown=(my_cookies>good_amount_of_cookies) or (best_amount_of_cookies>good_amount_of_cookies)
+print(final_countdown)
+
+my_cookies = 20
+good_amount_of_cookies = 50
+best_amount_of_cookies = 100
+finally_countdown=(my_cookies<good_amount_of_cookies) and (best_amount_of_cookies>good_amount_of_cookies)
+print(finally_countdown)
