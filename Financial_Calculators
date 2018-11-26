@@ -1,0 +1,28 @@
+#Write a function that calculates compound interest 
+print("Compound Interest Calculator")
+print("p=original principal sum")
+print("r=nominal annual interest rate")
+print("n=compounding frequency")
+print("t=overall length of time interest is applied")
+def find_compound_interest(p,r,n,t):
+    find_compound_interest=(p*(1+(r/n))**(n*t))
+    return find_compound_interest
+
+#Look up a few other finance related formulas and make a finance.py module with multiple functions. (Extra Credit)
+#Future Value Calculator
+print("Future Value Calculator")
+print("C=Cash flow at period zero")
+print("r=rate of return")
+print("n=number of periods")
+def find_future_value(C,r,n):
+    find_future_value=C*(1+r)**n
+    return find_future_value
+
+#Loan Payment Calculator
+print("Loan Payment Calculator")
+print("PV=Present Value")
+print("r=rate per period")
+print("n=number of periods")
+def find_loan_payment(PV,r,n):
+    find_loan_payment=(r*(PV))/(1-((1+r)**(-n)))
+    return find_loan_payment
