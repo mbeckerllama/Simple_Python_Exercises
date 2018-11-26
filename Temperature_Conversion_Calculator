@@ -1,0 +1,50 @@
+#Rewrite your temperature conversion code (question 7. of Lab 1) to use nested if, elif, and else statements. 
+#Final Conversion calculator between Celsius, Fahrenheit, and Kelvin
+print("Option 1:Fahrenheit to Celsius")
+print("Option 2:Fahrenheit to Kelvin")
+print("Option 3:Kelvin to Celsius")
+print("Option 4:Kelvin to Fahrenheit")
+print("Option 5:Celsius to Fahrenheit")
+print("Option 6:Celsius to Kelvin")
+def option():
+    op=int(input("Enter Option #:"))
+    if op == 1:
+            Fahrenheit2Celsius()
+    elif op == 2:
+            Fahrenheit2Kelvin()
+    elif op == 3:
+            Kelvin2Celsius()
+    elif op == 4:
+            Kelvin2Fahrenheit()
+    elif op == 5:
+            Celsius2Fahrenheit()
+    elif op == 6:
+            Celsius2Kelvin()
+    else :
+            print("Input Invalid. Try Again.")
+            option()
+def Fahrenheit2Celsius():
+           Fahrenheit1=float(input("Enter Fahrenheit (Degree):"))
+           Celsius1=(Fahrenheit1-32)*5/9
+           print("Temperature in Celsius:",Celsius1)
+def Fahrenheit2Kelvin():
+           Fahrenheit2=float(input("Enter Fahrenheit(Degree):"))
+           Kelvin1=((Fahrenheit2-32)*5/9)+273.15
+           print("Temperature in Kelvin:",Kelvin1)
+def Kelvin2Celsius():
+           Kelvin2=float(input("Enter Kelvin(Degree):"))
+           Celsius2=Kelvin2-273.15
+           print("Temperature in Celsius:",Celsius2)
+def Kelvin2Fahrenheit():
+           Kelvin3=float(input("Enter Kelvin(Degree):"))
+           Fahrenheit3=((Kelvin3-273.15)*9/5)+32
+           print("Temperature in Fahrenheit:",Fahrenheit3)
+def Celsius2Fahrenheit():
+           Celsius3=float(input("Enter Celsius(Degree):"))
+           Fahrenheit4=(Celsius3*9/5)+32
+           print("Temperature in Fahrenheit:",Fahrenheit4)
+def Celsius2Kelvin():
+           Celsius4=float(input("Enter Celsius(Degree):"))
+           Kelvin4=Celsius4+273.15
+           print("Temperature in Kelvin:",Kelvin4)
+option()
