@@ -1,0 +1,13 @@
+#2.	Import the pyplot module from matplotlib by doing >> from matplotlib import pyplot
+import math
+from matplotlib import pyplot
+x=[1,2,3,4,5,6,7]
+y=[3,4,5,6,4,3,56]
+pyplot.plot(x,y,'+g')#Plot x versus y where x is the list [1,2,3,4,5,6,7] and y is [3,4,5,6,4,3,56]
+#Change the markers to green + signs. 
+pyplot.xlabel('Week of the Semester')
+#Label your axes.
+pyplot.ylabel('Stress Level')
+pyplot.title('My Life: A Prediction')#Title your plot.
+pyplot.legend(['Predicted Stress Level'])#Add a legend.
+#Save your plot to a .png file.
