@@ -7,3 +7,40 @@ x = np.array([2, 1, -3])
 y = np.array([-3, 0, -1])
 print('x + y = \n', x + y)
 
+#Multiplying matrices
+import numpy as np
+first_matrix=np.array([[1,2,-1,8,5],[-2,1,0,4,5],[3,1.5,0.5,4,5]])
+second_matrix=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16],[-17,-18,-19,-20]])
+print(np.matmul(first_matrix,second_matrix))
+
+#Linear algebra function to find inverse and determinant
+import numpy as np
+import numpy as np
+import numpy.linalg as linalg
+inverse=linalg.inv(C)
+print(inverse)
+G=np.array([[1,3,0],[-2,2,0],[-2,1,0]])
+determinant=linalg.det(G)
+print(determinant)
+
+#Eigenvalues, Eigenvectors and Matrix Diagonalization
+import numpy as np
+A = np.array([[1, 4],[2, 3]])#import matrix
+print(A)
+
+#Find eigenvalues
+linalg.eig(A)
+
+#Find eigenvector
+P = linalg.eig(A)[1]
+print(P)
+
+#Matrix Diagonalization
+D = np.diag(linalg.eig(A)[0])
+print(D)
+
+np.matmul(np.matmul(P, D**3), linalg.inv(P))  # calculate A^3 by doing P D^3 P^-1
+cubed_matrix=linalg.matrix_power(A,3) #alternative method
+print(cubed_matrix)
+
+
