@@ -1,0 +1,14 @@
+import numpy 
+def forward_difference(f,x,h):
+    # f is the funcction, x is the value to evaluate, h is the step size
+    return (f(x+h)-f(x))/(float (h))
+f=numpy.sin #function
+x=1.0 #length
+h=1.0/100000000.0 #Step size
+approx_deriv=forward_difference(f, x, h)
+exact=numpy.cos
+def central_difference(f,x,h):
+    return ((f(x+0.5*h))-(f(x-0.5*h)))/(float(h))
+cntrl=central_difference(f,x,h)
+print(approx_deriv)
+print(cntrl)
