@@ -1,0 +1,66 @@
+class tree:
+    def __init__(self, total_number_of_leaves, color_of_bark, age_of_tree):
+        self.total_number_of_leaves=total_number_of_leaves
+        self.color_of_bark=color_of_bark
+        self.age_of_tree=age_of_tree
+    
+    def total_number_of_leaves(self):
+        return self.total_number_of_leaves
+    
+    def print_leaves_falling_per_day(self,t):
+        t=self.total_number_of_leaves
+        d=t/100
+        print('Leaves falling on a windy day:')
+        return(d)
+    
+    def print_cool_or_lame(self,judgement):
+        self.color_of_bark=judgement
+        if judgement == 'brown':
+            print('yeah, middle age is best age')
+        elif judgement == 'green':
+            print('youth is wasted on the young')
+        else:
+            print('eh I am not getting it. Laters dude.')
+            option()
+    def number_of_rings(self,rings):
+        rings=self.age_of_tree
+        print('Number of rings:')
+        return(rings)
+    def sound_of_a_tree(self):
+        print('rustle rustle')
+    
+givingtree=tree(1000,'brown',500)
+givingtree.print_leaves_falling_per_day(1000)
+givingtree.print_cool_or_lame('brown')
+givingtree.number_of_rings(500)    
+
+class SolarSystem:
+    def __init__(self,number_of_planets,radius_of_star,mass_of_star,temperature):
+        self.number_of_planets=number_of_planets
+        self.radius_of_star=radius_of_star
+        self.mass_of_star=mass_of_star
+        self.temperature=temperature
+    def gravitational_force(self,mass_of_star):
+        d=int(input('Distance from star(in meters):'))
+        m=self.mass_of_star
+        m1=int(input('Mass of interstellar object(in kg):'))
+        g=6.674*(10**-11)
+        force=(g*m*m1)/(d**2)
+        return (force)
+    def stellar_luminosity(self,radius_of_star,temperature):
+        r=self.radius_of_star
+        T=self.temperature
+        pi=3.14
+        sb= 5.67*(10**-8) #Stefan-Boltzmann constant
+        Luminosity=4*pi*(r**2)*(T**4)*sb
+        return (Luminosity)
+    def number_of_orbitals(self,number_of_planets):
+        number_of_orbitals=self.number_of_planets
+        return (number_of_orbitals)
+    def density_of_star(self,radius_of_star,mass_of_star):
+        r=self.radius_of_star
+        m=self.mass_of_star
+        pi=3.14
+        v=(4/3)*pi*(r**3)
+        d=m/v
+        return(d)
