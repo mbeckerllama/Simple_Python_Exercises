@@ -1,0 +1,13 @@
+from math import factorial
+import matplotlib.pyplot as plt
+import numpy as np
+#probability of two people sharing the same birthday within a population 
+def birthday(n): #n is the size of the population
+    return 1 - (factorial(365)/factorial(365-n))/(365**n)
+birthday(20)
+
+#Number of people that will be hospitalized in the course of a year using population and probability
+def hospitalized(probability, population):
+    probability=float(input("Input probability of hospitalization over a year:"))
+    population=float(input("Input population:"))
+    return (1-probability)**population
